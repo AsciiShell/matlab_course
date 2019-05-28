@@ -6,3 +6,5 @@
 *.docx
 
 *.fig
+
+**/\.ipynb_checkpoints/
