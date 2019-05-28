@@ -1,0 +1,10 @@
+close all;
+[D,map] = imread('Technlgy.bmp');
+I= ind2gray(D,map);
+figure,imshow(I);
+I1 = imadjust(I, [0 0.9],[], 1);
+I2 = imadjust(I, [0 0.9],[],0.5);
+I3 = imadjust(I, [0 0.9],[],2);
+figure,subplot(1,3, 1) ,imshow(I1);
+subplot(1,3,2) ,imshow(I2);
+subplot (1,3,3),imshow(I3);

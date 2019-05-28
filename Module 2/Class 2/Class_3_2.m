@@ -1,0 +1,12 @@
+[S,map] = imread('Athena.bmp');
+I = ind2gray(S, map);
+w = size(I,2);
+h = size(I,1);
+subplot(1,4,1);
+imshow(I);xlim([0 w]);ylim([0 h]);axis on;
+subplot(1,4,2);
+imshow(imresize(I,0.5));xlim([0 w]);ylim([0 h]);axis on;
+subplot(1,4,3);
+imshow(imresize(I,0.5, 'bilinear'));xlim([0 w]);ylim([0 h]);axis on;
+subplot(1,4,4);
+imshow(imresize(I,0.5, 'bicubic'));xlim([0 w]);ylim([0 h]);axis on;

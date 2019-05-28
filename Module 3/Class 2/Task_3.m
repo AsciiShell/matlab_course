@@ -1,0 +1,12 @@
+clear all;
+x = [20.3 15.4 17.2 19.2 23.1 18.1 21.9 15.3 16.8 13.2 20.4 16.5 19. 20.5 14.3 20.1 16.8 14.7 20.8 19.5 15.4 19.3 17.8 16.2 15.7 22.8 21.9 12.5 10.1 21.5];
+n = length(x);
+K = round(sqrt(n));
+R = range(x);
+Avr_v = mean(x);
+min_v = min(x);
+max_v = max(x);
+median = sort(x);
+median = median(n/2);
+hist(x,K);
+fprintf('Diff avr median %14.7f \n', 100*Avr_v/median);

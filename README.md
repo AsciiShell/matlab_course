@@ -1,2 +1,2 @@
-# matlab_course
+# Matlab course
 Matlab computer practicum

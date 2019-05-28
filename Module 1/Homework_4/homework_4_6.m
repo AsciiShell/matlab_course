@@ -1,0 +1,10 @@
+x = linspace(-2,1);
+y = 2*x.^2+x-2;
+plot(x,y);
+grid;
+syms x;
+x = solve('2*x^2 + +x-2=0');
+disp(vpa(x,5));
+clear;
+r=[2 1 -2];
+disp(roots(r));
