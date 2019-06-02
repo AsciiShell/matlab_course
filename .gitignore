@@ -8,3 +8,5 @@
 *.fig
 
 **/\.ipynb_checkpoints/
+
+\.idea/
